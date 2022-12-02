@@ -1,11 +1,3 @@
-// try {
-//     importScripts(
-//         "helpers/moment.min.js",
-//     )
-// } catch (e) {
-//     console.log(e)
-// }
-
 import fetch from 'node-fetch';
 import FormData from "form-data";
 
@@ -1177,6 +1169,17 @@ class Config {
 //END LIBS
 
 // background/netrefPlugin.js
+
+
+
+
+// try {
+//     importScripts(
+//         "helpers/moment.min.js",
+//     )
+// } catch (e) {
+//     console.log(e)
+// }
 
 // NOTE: This extension is also alongside the native agents.
 let extensionVersion = chrome.runtime.getManifest().version
