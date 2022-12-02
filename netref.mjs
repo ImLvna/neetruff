@@ -21,6 +21,8 @@ import { chrome } from './cbookapi.mjs';
 //its best to collapse both of these
 //theyre in this file because everything accesses eachother and i dont want to deal with it
 //WHY???? THEYRE CLASSES???? WHY NOT JUST USE THEM IN CONSTRUCTOR?????
+
+// background/util.js
 class Util {
     currentWebsite = ""
     encodedWebSite = ""
@@ -606,6 +608,7 @@ class Util {
     })()
 }
 
+// background/config.js
 class Config {
     // this is in minutes.
     defaultInactivityTimeout = 15
@@ -1171,7 +1174,9 @@ class Config {
     }
 }
 
+//END LIBS
 
+// background/netrefPlugin.js
 
 // NOTE: This extension is also alongside the native agents.
 let extensionVersion = chrome.runtime.getManifest().version
