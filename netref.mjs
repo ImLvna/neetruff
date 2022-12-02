@@ -6,10 +6,10 @@
 //     console.log(e)
 // }
 
-import fetch from 'node-fetch'
-import FormData from "form-data"
+import fetch from 'node-fetch';
+import FormData from "form-data";
 
-import { chrome } from './cbookapi.mjs'
+import { chrome } from './cbookapi.mjs';
 
 
 //All below code is pulled from the extension

@@ -1,4 +1,4 @@
-import * as dotenv from 'dotenv'
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 const manifest = {
@@ -29,7 +29,7 @@ const manifest = {
     "permissions": ["\u003Call_urls>", "tabs", "identity", "identity.email", "enterprise.deviceAttributes", "notifications", "activeTab", "webRequest"],
     "update_url": "https://clients2.google.com/service/update2/crx",
     "version": "2022.12"
-}
+};
 
 
 export let chrome = {
@@ -65,23 +65,21 @@ export let chrome = {
     },
     identity: {
         getProfileUserInfo: (_, cb) => {
-            cb({
-                email: process.env.EMAIL
-            })
+            cb({email: process.env.EMAIL});
         }
     },
     enterprise: {
         deviceAttributes: {
             getDirectoryDeviceId: (cb) => {
-                cb(process.env.DEVICE_ID)
+                cb(process.env.DEVICE_ID);
             },
             getDeviceSerialNumber: (cb) => {
-                cb(process.env.DEVICE_SERIAL)
+                cb(process.env.DEVICE_SERIAL);
             },
             getDeviceAssetId: (cb) => {
-                cb(process.env.DEVICE_ASSET)
+                cb(process.env.DEVICE_ASSET);
             },
         }
     }
 
-}
+};
