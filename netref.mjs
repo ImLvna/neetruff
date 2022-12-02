@@ -18,7 +18,9 @@ import { chrome } from './cbookapi.mjs';
 
 
 //LIBS
-
+//its best to collapse both of these
+//theyre in this file because everything accesses eachother and i dont want to deal with it
+//WHY???? THEYRE CLASSES???? WHY NOT JUST USE THEM IN CONSTRUCTOR?????
 class Util {
     currentWebsite = ""
     encodedWebSite = ""

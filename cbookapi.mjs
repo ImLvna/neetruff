@@ -1,6 +1,7 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 
+//just manifest.json
 const manifest = {
     "background": {
         "persistent": true,
@@ -32,6 +33,8 @@ const manifest = {
 };
 
 
+//netref uses chrome apis so im emulating them
+//TODO: make the empty functions log, and maybe impliment some of them idfk
 export let chrome = {
     runtime: {
         getManifest: () => manifest,
