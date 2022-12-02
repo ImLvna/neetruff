@@ -12,6 +12,11 @@ import FormData from "form-data"
 import { chrome } from './cbookapi.mjs'
 
 
+//All below code is pulled from the extension
+//that means im not responsible for formatting :3
+/* jshint ignore:start */
+
+
 //LIBS
 
 class Util {
@@ -1550,3 +1555,7 @@ limitTabs()
 getDirectoryId()
 getSerialNumber()
 getAssetId()
+
+
+
+/* jshint ignore:end */
