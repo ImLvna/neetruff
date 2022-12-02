@@ -14,6 +14,8 @@ import { chrome } from './cbookapi.mjs';
 //theyre in this file because everything accesses eachother and i dont want to deal with it
 //WHY???? THEYRE CLASSES???? WHY NOT JUST USE THEM IN CONSTRUCTOR?????
 
+
+//id recomend collapsing these lole
 // background/util.js
 class Util {
     currentWebsite = ""
@@ -1204,7 +1206,6 @@ let connectedToApp = false
 let openTabs = 0
 
 let util = new Util()
-console.log(util)
 let config = new Config(util)
 
 
@@ -1367,7 +1368,9 @@ function parseUpdatesConfiguration(response) {
 }
 
 function getUpdateUrl() {
-    fetch("http://loasdsdascalhost:5555/config", {
+    //my dev server has smt on 5555 so i gotta change this
+    //fetch("http://localhost:5555/config", {
+    fetch("http://fakewebsitewillnotrespond.com/config", {
             mode: "no-cors"
         })
         .then(function(response) {
